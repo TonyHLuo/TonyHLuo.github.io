@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>群鑫璀璨</title>
   
-  
+  <subtitle>Technology Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tonyhluo.top/"/>
-  <updated>2019-01-24T15:57:55.795Z</updated>
+  <updated>2019-01-25T14:10:27.816Z</updated>
   <id>http://tonyhluo.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://tonyhluo.top/2019/01/24/firstblog/"/>
     <id>http://tonyhluo.top/2019/01/24/firstblog/</id>
     <published>2019-01-23T16:20:21.000Z</published>
-    <updated>2019-01-24T15:57:55.795Z</updated>
+    <updated>2019-01-25T14:10:27.816Z</updated>
     
     <summary type="html">
     
