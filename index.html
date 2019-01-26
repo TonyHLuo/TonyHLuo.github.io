@@ -415,12 +415,24 @@
                 
               
 
-              <time title="创建时间：2019-01-26 20:07:39 / 修改时间：23:54:44" itemprop="dateCreated datePublished" datetime="2019-01-26T20:07:39+08:00">2019-01-26</time>
+              <time title="创建时间：2019-01-26 20:07:39" itemprop="dateCreated datePublished" datetime="2019-01-26T20:07:39+08:00">2019-01-26</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-27 00:27:54" itemprop="dateModified" datetime="2019-01-27T00:27:54+08:00">2019-01-27</time>
               
             
           </span>
@@ -473,23 +485,19 @@
 
       
         
-          
-            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
 </blockquote>
 <p><em>字符串类型是python里面最长见的数据类型。记住一点python里面的单引号和双引号的作用是相同的，这是python不同于其他语言的一点。比如说在C语言里面用单引号来标识字符，用双引号来标识字符串，但是在python里面没有字符这个概念，这有可能是单引号和双引号的作用是相同的另外一个原因吧。字符串是<strong>不可变</strong>的类型，意味着改变一个字符串的元素需要新建一个新的字符串。字符串中的字符可以通过切片操作顺序的访问。</em></p>
 <hr>
-<h1 id="1-字符串的创建和赋值"><a href="#1-字符串的创建和赋值" class="headerlink" title="1.字符串的创建和赋值"></a>1.字符串的创建和赋值</h1><p>&emsp;&emsp;创建字符串就和创建其他变量一样简单，当然你也可以用把 <strong><em>str()</em></strong> 作为工厂方法创建一个字符串并把它赋值给一个变量，直接上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">aString = <span class="string">"You are my friend"</span></span><br><span class="line">bString = str(<span class="string">"You are my friend too"</span>)</span><br></pre></td></tr></table></figure></p>
-<h1 id="2-值的访问"><a href="#2-值的访问" class="headerlink" title="2.值的访问"></a>2.值的访问</h1><p>&emsp;&emsp;前言中已经提到，python没有<strong><em>字符</em></strong>的概念，所以替换它的是长度为1的字符串，可以用[i]、[i:]、[:i]、[i:j] 的方式来访问字符串中的某个值或者说某一个子串，i 和  j 分别代表索引，python中字符串索引和其他语言也是一样的，下标从0开始。如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">aString = <span class="string">"You are my friend"</span></span><br><span class="line">aString[<span class="number">0</span>]   <span class="comment">#对应于"Y"</span></span><br><span class="line">aString[<span class="number">1</span>:]  <span class="comment">#对应于"ou are my friend"</span></span><br><span class="line">aString[:<span class="number">5</span>]  <span class="comment">#对应于"You a"</span></span><br><span class="line">aString[<span class="number">2</span>:<span class="number">6</span>] <span class="comment">#对应于"u ar"</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="3-改变字符串"><a href="#3-改变字符串" class="headerlink" title="3.改变字符串"></a>3.改变字符串</h1><p>&emsp;&emsp;可以通过给一个字符串赋值的方式来<strong><em>更新</em></strong>一个已有的字符串。上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">aString = <span class="string">"You are my friend"</span></span><br><span class="line">aString = aString[:<span class="number">11</span>] + <span class="string">"classmates"</span> <span class="comment">#对应于"You are my classmates"</span></span><br><span class="line">aString = <span class="string">"Yes,you too!"</span>              <span class="comment">#对应于"Yes,you too!"</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="4-删除字符串"><a href="#4-删除字符串" class="headerlink" title="4.删除字符串"></a>4.删除字符串</h1><p>&emsp;&emsp;首先，字符串是<strong><em>不可变</em></strong>的，所以你不能删除一个字符串里的某个字符，能做的只是清空一个空字符串，或者把把不需要的字符串剔除再拼接，上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">aString = <span class="string">"You are my friend"</span></span><br><span class="line">aString = aString[:<span class="number">5</span>] + aString[<span class="number">6</span>:] <span class="comment">#删除"r"</span></span><br><span class="line">print(aString)                      <span class="comment">#输出 "You ae my friend"</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="5-字符串操作符"><a href="#5-字符串操作符" class="headerlink" title="5.字符串操作符"></a>5.字符串操作符</h1><h2 id="5-1-标准操作符"><a href="#5-1-标准操作符" class="headerlink" title="5.1 标准操作符"></a>5.1 标准操作符</h2><p>&emsp;&emsp;字符串操作符有标准类型的操作符，比如：&lt;、&gt;、==、!=，这些和其他语言的比较操作符一样，是按照ASCII值的大小来比较，在这里就不细究了。</p>
-<h2 id="5-2-序列操作符"><a href="#5-2-序列操作符" class="headerlink" title="5.2 序列操作符"></a>5.2 序列操作符</h2><p>&emsp;&emsp;字符串也有序列操作符切片，关于切片我会专门做一个专题来讲。</p>
-<h2 id="5-3-成员操作符"><a href="#5-3-成员操作符" class="headerlink" title="5.3 成员操作符"></a>5.3 成员操作符</h2><p>&emsp;&emsp;字符串也有自己的成员操作符<strong><em>in</em></strong>和<strong><em>not in</em></strong>。上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">aString = <span class="string">"py"</span></span><br><span class="line">bString = <span class="string">"pt"</span></span><br><span class="line">cString = <span class="string">"python"</span></span><br><span class="line">print(aString <span class="keyword">in</span> cString) <span class="comment">#Ture</span></span><br><span class="line">print(bString <span class="keyword">in</span> cString) <span class="comment">#False</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="5-4-连接符（-）"><a href="#5-4-连接符（-）" class="headerlink" title="5.4 连接符（+）"></a>5.4 连接符（+）</h2><p>&emsp;&emsp;和C++ STL中的string一样，python也有连接操作符<strong>“+”</strong> ，我们可以通过这种连接操作符来从原有的字符串获得一个新的字符串。上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">aString = <span class="string">"I am a"</span> + <span class="string">"coder"</span></span><br><span class="line">print(aString) <span class="comment">#输出"I am acoder"</span></span><br><span class="line">aString = <span class="string">"I am a"</span> + <span class="string">" "</span> + <span class="string">"coder"</span></span><br><span class="line">print(aString) <span class="comment">#输出"I am a coder"</span></span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>&emsp;&emsp;上面的内容就是一些python字符串的基本应用，很简单吧，可是字符串在其他语言中，比如在C语言中可没这么简单，一些有关字符串的操作运用了C标准库函数，比如memcpy()，strncpy()等等，这些都必须要对内存中字符串的形态要有所了解，而python的字符串你只管用就行了。</p>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/26/pythonString/" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -569,7 +577,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/24/firstblog/" class="post-title-link" itemprop="url">博客的意义</a>
+                <a href="/2019/01/24/firstblog/" class="post-title-link" itemprop="url">关于博客</a>
               
             
           </h1>
@@ -611,7 +619,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-26 19:56:38" itemprop="dateModified" datetime="2019-01-26T19:56:38+08:00">2019-01-26</time>
+                <time title="修改时间：2019-01-27 00:27:50" itemprop="dateModified" datetime="2019-01-27T00:27:50+08:00">2019-01-27</time>
               
             
           </span>
@@ -664,19 +672,19 @@
 
       
         
+          <p><img src="https://i.loli.net/2019/01/26/5c4c48b738882.jpg" alt="blog.jpg"><br>
+          <!--noindex-->
           
-            <p><img src="https://i.loli.net/2019/01/26/5c4c48b738882.jpg" alt="blog.jpg"></p>
-<p>&emsp;&emsp;折腾了两天，属于自己的Blog终于有个雏形了，在整个过程学到了一些前端技术，还是有所收获的。</p>
-<p>&emsp;&emsp;此站点是我平时记录一些技术文章的地方，为什么要写博客？主要有以下几点：</p>
-<p>1.平时看的东西比较杂，特别是技术上的一些书和文章，希望能在blog上收敛，起到一个归总的作用；</p>
-<p>2.说实话，记性不太好，希望能通过写blog起到一个巩固的作用，俗话说好记性不如烂笔头；</p>
-<p>3.我相信通过写blog可以把书看薄吧。</p>
-<p>&emsp;&emsp;希望这是一个好的开始，让我们在技术的世界里遨游吧。</p>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/24/firstblog/" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
     
 
