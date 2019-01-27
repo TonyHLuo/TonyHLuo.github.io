@@ -103,18 +103,18 @@
 
 
 
-  <meta name="description" content="题目描述&amp;emsp;&amp;emsp;请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。">
+  <meta name="description" content="题目描述&amp;emsp;&amp;emsp;输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。">
 <meta name="keywords" content="Code">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer之替换空格">
-<meta property="og:url" content="http://tonyhluo.top/2019/01/27/codeSpace/index.html">
+<meta property="og:title" content="剑指offer之重建二叉树">
+<meta property="og:url" content="http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/index.html">
 <meta property="og:site_name" content="群鑫璀璨">
-<meta property="og:description" content="题目描述&amp;emsp;&amp;emsp;请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。">
+<meta property="og:description" content="题目描述&amp;emsp;&amp;emsp;输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-27T14:45:36.502Z">
+<meta property="og:updated_time" content="2019-01-27T15:30:47.291Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指offer之替换空格">
-<meta name="twitter:description" content="题目描述&amp;emsp;&amp;emsp;请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。">
+<meta name="twitter:title" content="剑指offer之重建二叉树">
+<meta name="twitter:description" content="题目描述&amp;emsp;&amp;emsp;输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。">
 
 
 
@@ -123,7 +123,7 @@
 
 
 
-  <link rel="canonical" href="http://tonyhluo.top/2019/01/27/codeSpace/">
+  <link rel="canonical" href="http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/">
 
 
 
@@ -133,7 +133,7 @@
   };
 </script>
 
-  <title>剑指offer之替换空格 | 群鑫璀璨</title>
+  <title>剑指offer之重建二叉树 | 群鑫璀璨</title>
   
 
 
@@ -370,7 +370,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tonyhluo.top/2019/01/27/codeSpace/">
+    <link itemprop="mainEntityOfPage" href="http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HelloCoder~">
@@ -387,7 +387,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指offer之替换空格
+          <h1 class="post-title" itemprop="name headline">剑指offer之重建二叉树
 
               
             
@@ -413,7 +413,7 @@
                 
               
 
-              <time title="创建时间：2019-01-27 22:39:32 / 修改时间：22:45:36" itemprop="dateCreated datePublished" datetime="2019-01-27T22:39:32+08:00">2019-01-27</time>
+              <time title="创建时间：2019-01-27 23:16:40 / 修改时间：23:30:47" itemprop="dateCreated datePublished" datetime="2019-01-27T23:16:40+08:00">2019-01-27</time>
             
 
             
@@ -470,8 +470,8 @@
       
 
       
-        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>&emsp;&emsp;请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。<br><a id="more"></a></p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">replaceSpace</span><span class="params">(<span class="keyword">char</span> *str,<span class="keyword">int</span> length)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="literal">NULL</span> == str || length &lt;= <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> blankNum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; <span class="built_in">strlen</span>(str); ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(str[i] == <span class="number">32</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                ++blankNum;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> newLen = <span class="built_in">strlen</span>(str) + <span class="number">2</span> * blankNum;</span><br><span class="line">        <span class="keyword">int</span> originalIdex = <span class="built_in">strlen</span>(str);</span><br><span class="line">        <span class="keyword">int</span> newIdex = newLen;</span><br><span class="line">        <span class="keyword">while</span>(originalIdex &gt;= <span class="number">0</span> &amp;&amp; newIdex &gt; originalIdex)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(str[originalIdex] == <span class="number">32</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                str[newIdex--] = <span class="number">48</span>;</span><br><span class="line">                str[newIdex--] = <span class="number">50</span>;</span><br><span class="line">                str[newIdex--] = <span class="number">37</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                str[newIdex--] = str[originalIdex];</span><br><span class="line">            &#125;</span><br><span class="line">            --originalIdex;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>&emsp;&emsp;输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。<br><a id="more"></a></p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for binary tree</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">reConstructBinaryTree</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pre,<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vin)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="number">0</span> == pre.size() || <span class="number">0</span> == vin.size())</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pre_left, pre_right, vin_left, vin_right;</span><br><span class="line">        <span class="keyword">int</span> cursor = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> rootVal = pre[<span class="number">0</span>];</span><br><span class="line">        TreeNode* root = <span class="keyword">new</span> TreeNode(<span class="number">0</span>);</span><br><span class="line">        root-&gt;val = rootVal;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(pre.size() == <span class="number">1</span> &amp;&amp; vin.size() == <span class="number">1</span> &amp;&amp; pre[<span class="number">0</span>] == vin[<span class="number">0</span>])</span><br><span class="line">            <span class="keyword">return</span> root;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; vin.size(); ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(vin[i] == rootVal)</span><br><span class="line">            &#123;</span><br><span class="line">                cursor = i;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cursor; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            vin_left.push_back(vin[i]);</span><br><span class="line">            pre_left.push_back(pre[i+<span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = cursor + <span class="number">1</span>; i &lt; vin.size(); ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            vin_right.push_back(vin[i]);</span><br><span class="line">            pre_right.push_back(pre[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        root-&gt;left = reConstructBinaryTree(pre_left,vin_left);</span><br><span class="line">        root-&gt;right = reConstructBinaryTree(pre_right,vin_right);</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -498,12 +498,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/01/27/codeSpace/">剑指offer之替换空格</a></p>
+  <p><span>本文标题:</span><a href="/2019/01/27/codeReConstructBinaryTree/">剑指offer之重建二叉树</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 HelloCoder~ 的个人博客">HelloCoder~</a></p>
-  <p><span>发布时间:</span>2019年01月27日 - 22:01</p>
-  <p><span>最后更新:</span>2019年01月27日 - 22:01</p>
-  <p><span>原始链接:</span><a href="/2019/01/27/codeSpace/" title="剑指offer之替换空格">http://tonyhluo.top/2019/01/27/codeSpace/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://tonyhluo.top/2019/01/27/codeSpace/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年01月27日 - 23:01</p>
+  <p><span>最后更新:</span>2019年01月27日 - 23:01</p>
+  <p><span>原始链接:</span><a href="/2019/01/27/codeReConstructBinaryTree/" title="剑指offer之重建二叉树">http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -550,8 +550,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/26/pythonString/" rel="next" title="python之字符串">
-                <i class="fa fa-chevron-left"></i> python之字符串
+              <a href="/2019/01/27/codePrintList/" rel="next" title="剑指offer之从尾到头打印链表">
+                <i class="fa fa-chevron-left"></i> 剑指offer之从尾到头打印链表
               </a>
             
           </div>
@@ -559,10 +559,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/27/codePrintList/" rel="prev" title="剑指offer之从尾到头打印链表">
-                剑指offer之从尾到头打印链表 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
