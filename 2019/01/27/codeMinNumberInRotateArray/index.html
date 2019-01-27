@@ -103,18 +103,18 @@
 
 
 
-  <meta name="description" content="题目描述&amp;emsp;&amp;emsp;输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。">
+  <meta name="description" content="题目描述&amp;emsp;&amp;emsp;把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个非减排序的数组的一个旋转，输出旋转数组的最小元素。 例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。 NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。">
 <meta name="keywords" content="Code">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer之重建二叉树">
-<meta property="og:url" content="http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/index.html">
+<meta property="og:title" content="剑指offer之旋转数组的最小数字">
+<meta property="og:url" content="http://tonyhluo.top/2019/01/27/codeMinNumberInRotateArray/index.html">
 <meta property="og:site_name" content="群鑫璀璨">
-<meta property="og:description" content="题目描述&amp;emsp;&amp;emsp;输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。">
+<meta property="og:description" content="题目描述&amp;emsp;&amp;emsp;把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个非减排序的数组的一个旋转，输出旋转数组的最小元素。 例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。 NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-27T15:30:47.291Z">
+<meta property="og:updated_time" content="2019-01-27T15:55:49.703Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指offer之重建二叉树">
-<meta name="twitter:description" content="题目描述&amp;emsp;&amp;emsp;输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。">
+<meta name="twitter:title" content="剑指offer之旋转数组的最小数字">
+<meta name="twitter:description" content="题目描述&amp;emsp;&amp;emsp;把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个非减排序的数组的一个旋转，输出旋转数组的最小元素。 例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。 NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。">
 
 
 
@@ -123,7 +123,7 @@
 
 
 
-  <link rel="canonical" href="http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/">
+  <link rel="canonical" href="http://tonyhluo.top/2019/01/27/codeMinNumberInRotateArray/">
 
 
 
@@ -133,7 +133,7 @@
   };
 </script>
 
-  <title>剑指offer之重建二叉树 | 群鑫璀璨</title>
+  <title>剑指offer之旋转数组的最小数字 | 群鑫璀璨</title>
   
 
 
@@ -370,7 +370,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/">
+    <link itemprop="mainEntityOfPage" href="http://tonyhluo.top/2019/01/27/codeMinNumberInRotateArray/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HelloCoder~">
@@ -387,7 +387,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指offer之重建二叉树
+          <h1 class="post-title" itemprop="name headline">剑指offer之旋转数组的最小数字
 
               
             
@@ -413,7 +413,7 @@
                 
               
 
-              <time title="创建时间：2019-01-27 23:16:40 / 修改时间：23:30:47" itemprop="dateCreated datePublished" datetime="2019-01-27T23:16:40+08:00">2019-01-27</time>
+              <time title="创建时间：2019-01-27 23:50:51 / 修改时间：23:55:49" itemprop="dateCreated datePublished" datetime="2019-01-27T23:50:51+08:00">2019-01-27</time>
             
 
             
@@ -470,8 +470,8 @@
       
 
       
-        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>&emsp;&emsp;输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。<br><a id="more"></a></p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for binary tree</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">reConstructBinaryTree</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pre,<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vin)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="number">0</span> == pre.size() || <span class="number">0</span> == vin.size())</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pre_left, pre_right, vin_left, vin_right;</span><br><span class="line">        <span class="keyword">int</span> cursor = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> rootVal = pre[<span class="number">0</span>];</span><br><span class="line">        TreeNode* root = <span class="keyword">new</span> TreeNode(<span class="number">0</span>);</span><br><span class="line">        root-&gt;val = rootVal;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(pre.size() == <span class="number">1</span> &amp;&amp; vin.size() == <span class="number">1</span> &amp;&amp; pre[<span class="number">0</span>] == vin[<span class="number">0</span>])</span><br><span class="line">            <span class="keyword">return</span> root;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; vin.size(); ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(vin[i] == rootVal)</span><br><span class="line">            &#123;</span><br><span class="line">                cursor = i;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cursor; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            vin_left.push_back(vin[i]);</span><br><span class="line">            pre_left.push_back(pre[i+<span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = cursor + <span class="number">1</span>; i &lt; vin.size(); ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            vin_right.push_back(vin[i]);</span><br><span class="line">            pre_right.push_back(pre[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        root-&gt;left = reConstructBinaryTree(pre_left,vin_left);</span><br><span class="line">        root-&gt;right = reConstructBinaryTree(pre_right,vin_right);</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>&emsp;&emsp;把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个非减排序的数组的一个旋转，输出旋转数组的最小元素。 例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。 NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。<br><a id="more"></a></p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">minOrder</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; rotateArray)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> val = rotateArray[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">unsigned</span> <span class="keyword">int</span> i = <span class="number">1</span>; i &lt;=  rotateArray.size() - <span class="number">1</span>; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(val &gt; rotateArray[i])</span><br><span class="line">            &#123;</span><br><span class="line">                val = rotateArray[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> val;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">minNumberInRotateArray</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; rotateArray)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(rotateArray.empty())</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> index1 = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> index2 = rotateArray.size()<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">int</span> indexMid = index1;</span><br><span class="line">        <span class="keyword">while</span>(rotateArray[index1] &gt;= rotateArray[index2])</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="number">1</span> == index2 - index1)</span><br><span class="line">            &#123;</span><br><span class="line">                indexMid = index2;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            indexMid = (index1+index2)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(rotateArray[indexMid] == rotateArray[index1] &amp;&amp; rotateArray[index1] == rotateArray[index2])</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">return</span> minOrder(rotateArray);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(rotateArray[indexMid] &lt;= rotateArray[index1])</span><br><span class="line">            &#123;</span><br><span class="line">                index2 = indexMid;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(rotateArray[indexMid] &gt;= rotateArray[index1])</span><br><span class="line">            &#123;</span><br><span class="line">                index1 = indexMid;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> rotateArray[indexMid];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -498,12 +498,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/01/27/codeReConstructBinaryTree/">剑指offer之重建二叉树</a></p>
+  <p><span>本文标题:</span><a href="/2019/01/27/codeMinNumberInRotateArray/">剑指offer之旋转数组的最小数字</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 HelloCoder~ 的个人博客">HelloCoder~</a></p>
   <p><span>发布时间:</span>2019年01月27日 - 23:01</p>
   <p><span>最后更新:</span>2019年01月27日 - 23:01</p>
-  <p><span>原始链接:</span><a href="/2019/01/27/codeReConstructBinaryTree/" title="剑指offer之重建二叉树">http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://tonyhluo.top/2019/01/27/codeReConstructBinaryTree/" aria-label="复制成功！"></i></span>
+  <p><span>原始链接:</span><a href="/2019/01/27/codeMinNumberInRotateArray/" title="剑指offer之旋转数组的最小数字">http://tonyhluo.top/2019/01/27/codeMinNumberInRotateArray/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://tonyhluo.top/2019/01/27/codeMinNumberInRotateArray/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -550,8 +550,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/27/codePrintList/" rel="next" title="剑指offer之从尾到头打印链表">
-                <i class="fa fa-chevron-left"></i> 剑指offer之从尾到头打印链表
+              <a href="/2019/01/27/codeTwoStack/" rel="next" title="剑指offer之用两个栈实现队列">
+                <i class="fa fa-chevron-left"></i> 剑指offer之用两个栈实现队列
               </a>
             
           </div>
@@ -559,10 +559,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/27/codeTwoStack/" rel="prev" title="剑指offer之用两个栈实现队列">
-                剑指offer之用两个栈实现队列 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
