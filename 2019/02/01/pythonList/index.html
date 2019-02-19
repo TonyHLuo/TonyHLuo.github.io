@@ -103,18 +103,18 @@
 
 
 
-  <meta name="description" content="题目描述&amp;emsp;&amp;emsp;输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。">
-<meta name="keywords" content="Code">
+  <meta name="description" content="前言python中列表也是一种序列式的数据类型。可以通过下标或者切片的方式去访问列表中的元素。不同于字符串的是，列表是能够保留任意数目的python对象的灵活的容器。列表不仅可以包含python的标准类型，也可以包含我们自己定义的对象作为元素，还有一点特别重要的是，不同于C语言中的数组类型，列表是可以包含不同类型的数据类型。因为列表是一种容器，所以它可以调用它所支持的一些构造函数，比如说pop、s">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer之从尾到头打印链表">
-<meta property="og:url" content="http://tonyhluo.top/2019/01/27/codePrintList/index.html">
+<meta property="og:title" content="python之列表">
+<meta property="og:url" content="http://tonyhluo.top/2019/02/01/pythonList/index.html">
 <meta property="og:site_name" content="群鑫璀璨">
-<meta property="og:description" content="题目描述&amp;emsp;&amp;emsp;输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。">
+<meta property="og:description" content="前言python中列表也是一种序列式的数据类型。可以通过下标或者切片的方式去访问列表中的元素。不同于字符串的是，列表是能够保留任意数目的python对象的灵活的容器。列表不仅可以包含python的标准类型，也可以包含我们自己定义的对象作为元素，还有一点特别重要的是，不同于C语言中的数组类型，列表是可以包含不同类型的数据类型。因为列表是一种容器，所以它可以调用它所支持的一些构造函数，比如说pop、s">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-27T15:15:46.578Z">
+<meta property="og:updated_time" content="2019-02-19T13:39:04.522Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指offer之从尾到头打印链表">
-<meta name="twitter:description" content="题目描述&amp;emsp;&amp;emsp;输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。">
+<meta name="twitter:title" content="python之列表">
+<meta name="twitter:description" content="前言python中列表也是一种序列式的数据类型。可以通过下标或者切片的方式去访问列表中的元素。不同于字符串的是，列表是能够保留任意数目的python对象的灵活的容器。列表不仅可以包含python的标准类型，也可以包含我们自己定义的对象作为元素，还有一点特别重要的是，不同于C语言中的数组类型，列表是可以包含不同类型的数据类型。因为列表是一种容器，所以它可以调用它所支持的一些构造函数，比如说pop、s">
 
 
 
@@ -123,7 +123,7 @@
 
 
 
-  <link rel="canonical" href="http://tonyhluo.top/2019/01/27/codePrintList/">
+  <link rel="canonical" href="http://tonyhluo.top/2019/02/01/pythonList/">
 
 
 
@@ -133,7 +133,7 @@
   };
 </script>
 
-  <title>剑指offer之从尾到头打印链表 | 群鑫璀璨</title>
+  <title>python之列表 | 群鑫璀璨</title>
   
 
 
@@ -370,7 +370,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tonyhluo.top/2019/01/27/codePrintList/">
+    <link itemprop="mainEntityOfPage" href="http://tonyhluo.top/2019/02/01/pythonList/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HelloCoder~">
@@ -387,7 +387,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指offer之从尾到头打印链表
+          <h1 class="post-title" itemprop="name headline">python之列表
 
               
             
@@ -413,12 +413,24 @@
                 
               
 
-              <time title="创建时间：2019-01-27 22:50:48 / 修改时间：23:15:46" itemprop="dateCreated datePublished" datetime="2019-01-27T22:50:48+08:00">2019-01-27</time>
+              <time title="创建时间：2019-02-01 21:54:39" itemprop="dateCreated datePublished" datetime="2019-02-01T21:54:39+08:00">2019-02-01</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-19 21:39:04" itemprop="dateModified" datetime="2019-02-19T21:39:04+08:00">2019-02-19</time>
               
             
           </span>
@@ -435,7 +447,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Code/" itemprop="url" rel="index"><span itemprop="name">Code</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
 
                 
                 
@@ -470,8 +482,15 @@
       
 
       
-        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>&emsp;&emsp;输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。<br><a id="more"></a></p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*  struct ListNode &#123;</span></span><br><span class="line"><span class="comment">*        int val;</span></span><br><span class="line"><span class="comment">*        struct ListNode *next;</span></span><br><span class="line"><span class="comment">*        ListNode(int x) :</span></span><br><span class="line"><span class="comment">*              val(x), next(NULL) &#123;</span></span><br><span class="line"><span class="comment">*        &#125;</span></span><br><span class="line"><span class="comment">*  &#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; printListFromTailToHead(ListNode* head) &#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec;</span><br><span class="line">        <span class="keyword">if</span>(<span class="literal">NULL</span> == head)</span><br><span class="line">            <span class="keyword">return</span> vec;</span><br><span class="line">        ListNode* node = head;</span><br><span class="line">        <span class="keyword">while</span>(<span class="literal">NULL</span> != node)</span><br><span class="line">        &#123;</span><br><span class="line">            vec.push_back(node-&gt;val);</span><br><span class="line">            node = node-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; arrayRever;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::reverse_iterator riter;</span><br><span class="line">        <span class="keyword">for</span> (riter = vec.rbegin(); riter != vec.rend(); riter++)</span><br><span class="line">        &#123;</span><br><span class="line">            arrayRever.push_back(*riter);</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="keyword">return</span> arrayRever;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><em>python中列表也是一种序列式的数据类型。可以通过下标或者切片的方式去访问列表中的元素。不同于字符串的是，列表是能够保留任意数目的python对象的灵活的容器。列表不仅可以包含python的标准类型，也可以包含我们自己定义的对象作为元素，还有一点特别重要的是，不同于C语言中的数组类型，列表是可以包含不同类型的数据类型。因为列表是一种容器，所以它可以调用它所支持的一些构造函数，比如说pop、sort、empt、reverse等。下面就让我们一起学习一下列表的有关知识。</em><br><a id="more"></a></p>
+<hr>
+<h1 id="1-列表的创建和赋值"><a href="#1-列表的创建和赋值" class="headerlink" title="1.列表的创建和赋值"></a>1.列表的创建和赋值</h1><p>&emsp;&emsp;创建列表有两种方法，一种是直接给一个列表变量赋值，只不过和给普通变量赋值不一样的是：列表是用方括号[ ]来定义的；一种是用工厂方法<strong><em>list()</em></strong> 赋值。上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">aList = [<span class="number">678</span>, <span class="string">"dog"</span>, <span class="number">11.13</span>, [<span class="string">"abc"</span>, <span class="string">"def"</span>], <span class="number">-9.6</span>]</span><br><span class="line">print(aList)     <span class="comment">#输出[678, "dog", 11.13, ["abc", "def"], -9.6]</span></span><br><span class="line">                 <span class="comment">#tip：列表里面可以嵌套列表的</span></span><br><span class="line">emptyList = []</span><br><span class="line">print(emptyList) <span class="comment">#输出[]</span></span><br><span class="line">bList = list(<span class="string">"hello"</span>)</span><br><span class="line">print(bList)     <span class="comment">#输出['h', 'e', 'l', 'l', 'o']</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="2-值的访问"><a href="#2-值的访问" class="headerlink" title="2.值的访问"></a>2.值的访问</h1><p>&emsp;&emsp;可以通过下标或者切片的方式去访问列表中的元素，和字符串的访问一样。上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">aList = [<span class="number">678</span>, <span class="string">"dog"</span>, <span class="number">11.13</span>, [<span class="string">"abc"</span>, <span class="string">"def"</span>], <span class="number">-9.6</span>]</span><br><span class="line">print(aList[<span class="number">0</span>])    <span class="comment">#输出678</span></span><br><span class="line">print(aList[<span class="number">1</span>:<span class="number">5</span>])  <span class="comment">#输出['dog', 11.13, ['abc', 'def'], -9.6]</span></span><br><span class="line">print(aList[:<span class="number">3</span>])   <span class="comment">#输出[678, 'dog', 11.13]</span></span><br><span class="line">print(aList[<span class="number">3</span>][<span class="number">0</span>]) <span class="comment">#输出'abc'</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="3-更新列表"><a href="#3-更新列表" class="headerlink" title="3.更新列表"></a>3.更新列表</h1><p>&emsp;&emsp;可以通过在等号的左边指定索引或者索引范围来更新列表中的一个或者几个元素，也可以通过<strong><em>append()</em></strong> 的方法来追加元素到列表中去。上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">aList     = [<span class="number">678</span>, <span class="string">"dog"</span>, <span class="number">11.13</span>, [<span class="string">"abc"</span>, <span class="string">"def"</span>], <span class="number">-9.6</span>]</span><br><span class="line">emptyList = []</span><br><span class="line">aList[<span class="number">0</span>] = <span class="number">123</span></span><br><span class="line">print(aList)     <span class="comment">#输出[123, 'dog', 11.13, ['abc', 'def'], -9.6]</span></span><br><span class="line">aList[<span class="number">1</span>:<span class="number">3</span>] = [<span class="string">"cat"</span>, <span class="number">2010</span>]</span><br><span class="line">print(aList)     <span class="comment">#输出[123, 'cat', 2010, ['abc', 'def'], -9.6]</span></span><br><span class="line">emptyList.append(<span class="string">"hava a value"</span>)</span><br><span class="line">print(emptyList) <span class="comment">#输出['hava a value']</span></span><br><span class="line">aList.append(aList[<span class="number">1</span>:<span class="number">3</span>])</span><br><span class="line">print(aList)     <span class="comment">#输出[123, 'cat', 2010, ['abc', 'def'], -9.6, ['cat', 2010]]</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="4-删除列表中的元素或删除自身"><a href="#4-删除列表中的元素或删除自身" class="headerlink" title="4.删除列表中的元素或删除自身"></a>4.删除列表中的元素或删除自身</h1><p>&emsp;&emsp;如果确切的知道要删除元素的索引可以用<strong><em>del</em></strong> 语句，否则可以用<strong><em>remove()</em></strong> 方法。我们还可以通过<strong><em>pop()</em></strong> 方法来删除一个元素并从列表中返回它。上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">aList = [<span class="number">678</span>, <span class="string">"dog"</span>, <span class="number">11.13</span>, [<span class="string">"abc"</span>, <span class="string">"def"</span>], <span class="number">-9.6</span>]</span><br><span class="line"><span class="keyword">del</span> aList[<span class="number">1</span>]</span><br><span class="line">print(aList) <span class="comment">#输出[678, 11.13, ['abc', 'def'], -9.6]</span></span><br><span class="line">aList.remove(<span class="number">678</span>)</span><br><span class="line">print(aList) <span class="comment">#输出[11.13, ['abc', 'def'], -9.6]</span></span><br><span class="line">a = aList.pop()</span><br><span class="line">print(a)     <span class="comment">#输出-9.6，不指定索引默认删除最后一个元素</span></span><br><span class="line">print(aList) <span class="comment">#输出[11.13, ['abc', 'def']]</span></span><br><span class="line">a = aList.pop(<span class="number">1</span>)</span><br><span class="line">print(a)     <span class="comment">#输出['abc', 'def']</span></span><br><span class="line">print(aList) <span class="comment">#输出[11.13]</span></span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;一般情况下，我们不需要删除一个列表对象，因为当列表对象出了作用域后会被自动析构，但是你如果想明确删除整个列表，可以用<strong><em>del</em></strong> 语句，上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">aList = [<span class="number">678</span>, <span class="string">"dog"</span>, <span class="number">11.13</span>, [<span class="string">"abc"</span>, <span class="string">"def"</span>], <span class="number">-9.6</span>]</span><br><span class="line"><span class="keyword">del</span> aList</span><br><span class="line">print(aList) <span class="comment">#注意：！！！！此时程序会报错NameError: name 'aList' is not defined，因为我们已经删除了aList，没有了aList这个对象，所以就打印不出来</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="5-操作符"><a href="#5-操作符" class="headerlink" title="5.操作符"></a>5.操作符</h1><p>&emsp;&emsp;基本同字符串。一个特殊操作符就是列表类型操作符和列表解析。其实在python中没有专门用于列表类型的操作符。列表可以使用大部分的对象和列表序列的操作符。列表有属于自己的方法—-列表解析。上代码吧：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print([i*<span class="number">2</span> <span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]]);             <span class="comment">#输出[2,4,6]</span></span><br><span class="line">print([i <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">8</span>) <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>]) <span class="comment">#输出[0, 2, 4, 6]</span></span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -498,12 +517,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/01/27/codePrintList/">剑指offer之从尾到头打印链表</a></p>
+  <p><span>本文标题:</span><a href="/2019/02/01/pythonList/">python之列表</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 HelloCoder~ 的个人博客">HelloCoder~</a></p>
-  <p><span>发布时间:</span>2019年01月27日 - 22:01</p>
-  <p><span>最后更新:</span>2019年01月27日 - 23:01</p>
-  <p><span>原始链接:</span><a href="/2019/01/27/codePrintList/" title="剑指offer之从尾到头打印链表">http://tonyhluo.top/2019/01/27/codePrintList/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://tonyhluo.top/2019/01/27/codePrintList/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年02月01日 - 21:02</p>
+  <p><span>最后更新:</span>2019年02月19日 - 21:02</p>
+  <p><span>原始链接:</span><a href="/2019/02/01/pythonList/" title="python之列表">http://tonyhluo.top/2019/02/01/pythonList/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://tonyhluo.top/2019/02/01/pythonList/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -537,7 +556,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Code/" rel="tag"><i class="fa fa-tag"></i> Code</a>
+            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
           
         </div>
       
@@ -550,8 +569,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/27/codeSpace/" rel="next" title="剑指offer之替换空格">
-                <i class="fa fa-chevron-left"></i> 剑指offer之替换空格
+              <a href="/2019/01/27/codeNumberOf1/" rel="next" title="剑指offer之二进制中1的个数">
+                <i class="fa fa-chevron-left"></i> 剑指offer之二进制中1的个数
               </a>
             
           </div>
@@ -559,10 +578,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/27/codeReConstructBinaryTree/" rel="prev" title="剑指offer之重建二叉树">
-                剑指offer之重建二叉树 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -739,7 +754,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-列表的创建和赋值"><span class="nav-number">2.</span> <span class="nav-text">1.列表的创建和赋值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-值的访问"><span class="nav-number">3.</span> <span class="nav-text">2.值的访问</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-更新列表"><span class="nav-number">4.</span> <span class="nav-text">3.更新列表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-删除列表中的元素或删除自身"><span class="nav-number">5.</span> <span class="nav-text">4.删除列表中的元素或删除自身</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-操作符"><span class="nav-number">6.</span> <span class="nav-text">5.操作符</span></a></li></ol></div>
             
 
           </div>
